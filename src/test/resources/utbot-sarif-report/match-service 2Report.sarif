@@ -1,0 +1,355 @@
+{
+  "$schema" : "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "version" : "2.1.0",
+  "runs" : [ {
+    "tool" : {
+      "driver" : {
+        "name" : "UnitTestBot",
+        "organization" : "utbot.org",
+        "version" : "1.0",
+        "rules" : [ {
+          "id" : "utbot.exception.NullPointerException",
+          "name" : "NullPointerException",
+          "shortDescription" : {
+            "text" : "Unexpected NullPointerException detected."
+          },
+          "fullDescription" : {
+            "text" : "Seems like an exception NullPointerException might be thrown."
+          },
+          "help" : {
+            "text" : "https://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html"
+          }
+        } ]
+      }
+    },
+    "results" : [ {
+      "ruleId" : "utbot.exception.NullPointerException",
+      "level" : "error",
+      "message" : {
+        "text" : "Unexpected exception: java.lang.NullPointerException.\nTest case: `createMatch(<Match>)`\n[Generated test for this case](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/com/example/matchservice/controller/MatchController.java",
+            "uriBaseId" : "%SRCROOT%"
+          },
+          "region" : {
+            "startLine" : 26,
+            "startColumn" : 9
+          }
+        }
+      }, {
+        "logicalLocations" : [ {
+          "fullyQualifiedName" : "com.example.matchservice.controller.MatchController"
+        } ]
+      } ],
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/test/java/com/example/matchservice/controller/MatchControllerTest.java",
+            "uriBaseId" : "%SRCROOT%"
+          },
+          "region" : {
+            "startLine" : 49,
+            "startColumn" : 5
+          }
+        }
+      } ],
+      "codeFlows" : [ {
+        "threadFlows" : [ {
+          "locations" : [ {
+            "location" : {
+              "message" : {
+                "text" : "MatchControllerTest.testCreateMatchThrowsNPE(MatchControllerTest.java:57)"
+              },
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "src/test/java/com/example/matchservice/controller/MatchControllerTest.java",
+                  "uriBaseId" : "%SRCROOT%"
+                },
+                "region" : {
+                  "startLine" : 57,
+                  "startColumn" : 9
+                }
+              }
+            }
+          }, {
+            "location" : {
+              "message" : {
+                "text" : "com.example.matchservice.controller.MatchController.createMatch(MatchController.java:26)"
+              },
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "src/main/java/com/example/matchservice/controller/MatchController.java",
+                  "uriBaseId" : "%SRCROOT%"
+                },
+                "region" : {
+                  "startLine" : 26,
+                  "startColumn" : 9
+                }
+              }
+            }
+          } ]
+        } ]
+      } ]
+    }, {
+      "ruleId" : "utbot.exception.NullPointerException",
+      "level" : "error",
+      "message" : {
+        "text" : "Unexpected exception: java.lang.NullPointerException.\nTest case: `deleteMatch(null)`\n[Generated test for this case](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/com/example/matchservice/controller/MatchController.java",
+            "uriBaseId" : "%SRCROOT%"
+          },
+          "region" : {
+            "startLine" : 52,
+            "startColumn" : 9
+          }
+        }
+      }, {
+        "logicalLocations" : [ {
+          "fullyQualifiedName" : "com.example.matchservice.controller.MatchController"
+        } ]
+      } ],
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/test/java/com/example/matchservice/controller/MatchControllerTest.java",
+            "uriBaseId" : "%SRCROOT%"
+          },
+          "region" : {
+            "startLine" : 154,
+            "startColumn" : 5
+          }
+        }
+      } ],
+      "codeFlows" : [ {
+        "threadFlows" : [ {
+          "locations" : [ {
+            "location" : {
+              "message" : {
+                "text" : "MatchControllerTest.testDeleteMatch_ResponseEntityBuild(MatchControllerTest.java:164)"
+              },
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "src/test/java/com/example/matchservice/controller/MatchControllerTest.java",
+                  "uriBaseId" : "%SRCROOT%"
+                },
+                "region" : {
+                  "startLine" : 164,
+                  "startColumn" : 13
+                }
+              }
+            }
+          } ]
+        } ]
+      } ]
+    }, {
+      "ruleId" : "utbot.exception.NullPointerException",
+      "level" : "error",
+      "message" : {
+        "text" : "Unexpected exception: java.lang.NullPointerException.\nTest case: `deleteMatch(1)`\n[Generated test for this case](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/com/example/matchservice/controller/MatchController.java",
+            "uriBaseId" : "%SRCROOT%"
+          },
+          "region" : {
+            "startLine" : 51,
+            "startColumn" : 9
+          }
+        }
+      }, {
+        "logicalLocations" : [ {
+          "fullyQualifiedName" : "com.example.matchservice.controller.MatchController"
+        } ]
+      } ],
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/test/java/com/example/matchservice/controller/MatchControllerTest.java",
+            "uriBaseId" : "%SRCROOT%"
+          },
+          "region" : {
+            "startLine" : 179,
+            "startColumn" : 5
+          }
+        }
+      } ],
+      "codeFlows" : [ {
+        "threadFlows" : [ {
+          "locations" : [ {
+            "location" : {
+              "message" : {
+                "text" : "MatchControllerTest.testDeleteMatchThrowsNPE(MatchControllerTest.java:184)"
+              },
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "src/test/java/com/example/matchservice/controller/MatchControllerTest.java",
+                  "uriBaseId" : "%SRCROOT%"
+                },
+                "region" : {
+                  "startLine" : 184,
+                  "startColumn" : 9
+                }
+              }
+            }
+          }, {
+            "location" : {
+              "message" : {
+                "text" : "com.example.matchservice.controller.MatchController.deleteMatch(MatchController.java:51)"
+              },
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "src/main/java/com/example/matchservice/controller/MatchController.java",
+                  "uriBaseId" : "%SRCROOT%"
+                },
+                "region" : {
+                  "startLine" : 51,
+                  "startColumn" : 9
+                }
+              }
+            }
+          } ]
+        } ]
+      } ]
+    }, {
+      "ruleId" : "utbot.exception.NullPointerException",
+      "level" : "error",
+      "message" : {
+        "text" : "Unexpected exception: java.lang.NullPointerException.\nTest case: `getMatchById(null)`\n[Generated test for this case](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/com/example/matchservice/controller/MatchController.java",
+            "uriBaseId" : "%SRCROOT%"
+          },
+          "region" : {
+            "startLine" : 34,
+            "startColumn" : 17
+          }
+        }
+      }, {
+        "logicalLocations" : [ {
+          "fullyQualifiedName" : "com.example.matchservice.controller.MatchController"
+        } ]
+      } ],
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/test/java/com/example/matchservice/controller/MatchControllerTest.java",
+            "uriBaseId" : "%SRCROOT%"
+          },
+          "region" : {
+            "startLine" : 280,
+            "startColumn" : 5
+          }
+        }
+      } ],
+      "codeFlows" : [ {
+        "threadFlows" : [ {
+          "locations" : [ {
+            "location" : {
+              "message" : {
+                "text" : "MatchControllerTest.testGetMatchById_ThrowNullPointerException(MatchControllerTest.java:290)"
+              },
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "src/test/java/com/example/matchservice/controller/MatchControllerTest.java",
+                  "uriBaseId" : "%SRCROOT%"
+                },
+                "region" : {
+                  "startLine" : 290,
+                  "startColumn" : 13
+                }
+              }
+            }
+          } ]
+        } ]
+      } ]
+    }, {
+      "ruleId" : "utbot.exception.NullPointerException",
+      "level" : "error",
+      "message" : {
+        "text" : "Unexpected exception: java.lang.NullPointerException.\nTest case: `getMatchById(1)`\n[Generated test for this case](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/com/example/matchservice/controller/MatchController.java",
+            "uriBaseId" : "%SRCROOT%"
+          },
+          "region" : {
+            "startLine" : 32,
+            "startColumn" : 9
+          }
+        }
+      }, {
+        "logicalLocations" : [ {
+          "fullyQualifiedName" : "com.example.matchservice.controller.MatchController"
+        } ]
+      } ],
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/test/java/com/example/matchservice/controller/MatchControllerTest.java",
+            "uriBaseId" : "%SRCROOT%"
+          },
+          "region" : {
+            "startLine" : 335,
+            "startColumn" : 5
+          }
+        }
+      } ],
+      "codeFlows" : [ {
+        "threadFlows" : [ {
+          "locations" : [ {
+            "location" : {
+              "message" : {
+                "text" : "MatchControllerTest.testGetMatchByIdThrowsNPE(MatchControllerTest.java:340)"
+              },
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "src/test/java/com/example/matchservice/controller/MatchControllerTest.java",
+                  "uriBaseId" : "%SRCROOT%"
+                },
+                "region" : {
+                  "startLine" : 340,
+                  "startColumn" : 9
+                }
+              }
+            }
+          }, {
+            "location" : {
+              "message" : {
+                "text" : "com.example.matchservice.controller.MatchController.getMatchById(MatchController.java:32)"
+              },
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "src/main/java/com/example/matchservice/controller/MatchController.java",
+                  "uriBaseId" : "%SRCROOT%"
+                },
+                "region" : {
+                  "startLine" : 32,
+                  "startColumn" : 9
+                }
+              }
+            }
+          } ]
+        } ]
+      } ]
+    } ]
+  } ]
+}

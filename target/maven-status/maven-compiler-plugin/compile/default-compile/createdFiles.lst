@@ -1,0 +1,7 @@
+com/example/matchservice/MatchServiceApplication.class
+com/example/matchservice/service/MatchService.class
+com/example/matchservice/config/OpenApiConfig.class
+com/example/matchservice/controller/MatchController.class
+com/example/matchservice/service/MatchServiceImpl.class
+com/example/matchservice/repository/MatchRepository.class
+com/example/matchservice/entity/Match.class
